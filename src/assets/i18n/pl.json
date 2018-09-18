@@ -1,0 +1,32 @@
+{
+  "HOME": {
+    "APPLICATION_NAME": "Lorem ipsum application"
+  },
+  "FOOTER": {
+    "INFO": "Wszelkie prawa zastrzeżone 2019"
+  },
+  "FORM": {
+    "LOGIN": "Zaloguj się",
+    "LOGIN_BUTTON": "Logowanie",
+    "SIGNUP": "Zarejestruj się",
+    "SIGNUP_BUTTON": "Rejestracja",
+    "USERNAME": "Nazwa użytkownika",
+    
+    "USERNAME_helpinfo": "Wprowadz nazwę użytkownika / przykład: jan@nowak.com",
+    "USERNAME_required": "Nazwa użytkownika jest wymagana",
+    
+    "PASSWORD": "Hasło",
+    "PASSWORD_helpinfo": "Wprowadz hasło wygenerowane przez aplikacje",
+    "PASSWORD_helpform": "Hasło musi składać się minimum z 6 znaków",
+    "PASSWORD_required": "Hasło jest wymagane",
+    "FIRSTNAME": "Imię",
+    "FIRSTNAME_required": "Imie wymagane jest podczas rejestracji",
+
+    "LASTNAME": "Nazwisko",
+    "LASTNAME_required": "Nazwisko wymagane jest podczas rejestracji",
+    "MAIL": "Adres email",
+    "MAIL_required": "Adres email jest wymagany podczas rejestracji"
+    
+    
+  }
+}

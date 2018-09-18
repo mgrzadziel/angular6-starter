@@ -1,0 +1,51 @@
+﻿<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form">
+
+
+    <div id="signup">
+        <h1>{{ 'HOME.APPLICATION_NAME' | translate }}</h1>
+        <h2></h2>
+    </div>
+
+    <ul class="tab-group">
+        <li class="tab active"><a href="login">{{ 'FORM.LOGIN' | translate }}</a></li>
+        <li class="tab "><a href="register">{{ 'FORM.SIGNUP' | translate }}</a></li>
+    </ul>
+
+
+    <div class="form-group">
+        <label for="firstName">{{ 'FORM.FIRSTNAME' | translate }}</label>
+        <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+            <div *ngIf="f.firstName.errors.required">{{ 'FORM.FIRSTNAME_required' | translate }}</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastName">{{ 'FORM.LASTNAME' | translate }}</label>
+        <input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+            <div *ngIf="f.lastName.errors.required">{{ 'FORM.LASTNAME_required' | translate }}</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="mail">{{ 'FORM.MAIL' | translate }}</label>
+        <input type="text" formControlName="mail" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.mail.errors }" />
+        <div *ngIf="submitted && f.mail.errors" class="invalid-feedback">
+            <div *ngIf="f.mail.errors.required">{{ 'FORM.MAIL_required' | translate }}</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">{{ 'FORM.PASSWORD' | translate }}</label>
+        <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">{{ 'FORM.PASSWORD_helpinfo' | translate }}</div>
+            <div *ngIf="f.password.errors.minlength">{{ 'FORM.PASSWORD_helpform' | translate }}</div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <button [disabled]="loading" class="button button-block">{{ 'FORM.SIGNUP_BUTTON' | translate }}</button>
+    </div>
+
+</form>
